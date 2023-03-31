@@ -9,6 +9,8 @@
 body {
     background-color: white;
     margin: 0px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 h1 {    
@@ -46,6 +48,8 @@ ul#miUL {
     gap: 75px;
 }
 
+/* los botones del banner */
+
 .button {
     cursor: pointer;
     position: absolute;
@@ -61,12 +65,14 @@ ul#miUL {
 }
 
 .botonSiguiente {
+    display: block;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 .botonAnterior {
-    right: 0;
+    display: block;
+    left: 0;
     border-radius: 3px 0 0 3px;
 }
 
@@ -80,15 +86,13 @@ div.divCuadrado {
 }
 
 div.divCuadrado img {
-    width: 100%;
-    height: auto;
+    width:100%;
     position: center;
 } 
 
 div.divRojo {
     background-color: #F6F4EF;
 }
-
 
 div.divAzul {    
     background-color: blue;
@@ -109,6 +113,10 @@ div.divVerde {
 
 /*sección contacto y testimonios*/
 
+section{
+    
+}
+
 .testimonios-titulo{
     display: flex;
     justify-content: center;
@@ -122,7 +130,7 @@ div.divVerde {
 
 }
 
-.contacto {
+section.contacto {
     display: flex;
     justify-content: space-around;
 }
@@ -158,6 +166,77 @@ div.divVerde {
 
 footer {
     font-size: 14px;
-    height:200px;
+    height:20px;
     border-top: 1px solid black;
+}
+
+
+/* formulario cotizacion*/
+
+section.cotizacion{
+    display: block;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+form.cotizacion {
+    background:#a4bbbd ;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+  
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+  
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+  
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+  
+.submit-button {
+    display: block;
+    width: 50%;
+    padding: 0.75rem;
+    margin-left: 110px;
+    background: var(--color-green);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+  
+.skip{
+      border-radius: 2px;
+      padding: 0.75rem;
+      background-color: #05363a;
+      color: white;
+      cursor: pointer;
 }
