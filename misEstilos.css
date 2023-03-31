@@ -107,6 +107,53 @@ div.divVerde {
 }
 
 
+/*sección contacto y testimonios*/
+
+.testimonios-titulo{
+    display: flex;
+    justify-content: center;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img {
+
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+}
+.contacto-left {
+}
+.contacto-titulo {
+}
+.contacto-subtitulo {
+}
+.contacto-form {
+}
+.contacto-form-grupo {
+}
+.contacto-form-label {
+}
+.contacto-form-input {
+}
+.contact-form-textarea {
+}
+.contacto-form-boton {
+}
+.contacto-right {
+}
+.contacto-redes {
+}
+.contacto-redes-link {
+}
+.contacto-ubicacion {
+}
+
+
 
 
 footer {
