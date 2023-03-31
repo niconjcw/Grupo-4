@@ -17,4 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
         elementoSiguiente.classList.remove("desactivo");
         elementoSiguiente.classList.add("activo");   
     });
+
+    //Carousel Testimonios//
+    let index = 0;
+const images = document.querySelectorAll('.carousel img');
+
+setInterval(() => {
+    index++;
+    if (index > images.length - 1) {
+    index = 0;
+    }
+    images.forEach(img => {
+    img.classList.remove('active');
+    });
+    images[index].classList.add('active');
+}, 10000);
+
+
 });
+
+

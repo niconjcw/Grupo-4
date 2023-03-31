@@ -32,19 +32,17 @@
     <button id="botonSiguiente">&#10095;</button>
 
     <section class="testimonios">
-        <h2 class="testimonios-titulo">más de [X] ya confiaron en nuestros servicios</h2>
+        <h2 class="testimonios-titulo">más de [X] negocios ya confiaron en nuestros servicios</h2>
         <div class="carousel">
-            <img src="Influencer.png" alt="Imagen 1">
-            <img src="Empresario.png" alt="Imagen 2">
-            <img src="Emprendedora.png" alt="Imagen 3">
+            <img src="imagenes/Emprendedora.png" alt="Imagen 1">
+            <img src="imagenes/Empresario.png" alt="Imagen 2">
+            <img src="imagenes/Influencer.png" alt="Imagen 3">
         </div> 
     </section>
-
-    </section>
+    <h2 class="contacto-titulo">Sección Contacto/Consultas</h2>
     <section class="contacto">
+        
         <div class="contacto-left">
-        <h2 class="contacto-titulo">Sección Contacto/Consultas</h2>
-        <p class="contacto-subtitulo">Dejanos tu consulta</p>
         <form class="contacto-form">
             <div class="contacto-form-grupo">
             <label class="contacto-form-label" for="name">Nombre y Apellido</label>
@@ -52,34 +50,34 @@
             </div>
             <div class="contacto-form-grupo">
             <label class="contacto-form-label" for="email">Correo Electrónico</label>
-            <input class="contacto-form-input" type="email" id="email" name="email" required>
+            <input class="contacto-form-input" type="email" placeholder="algo@ejemplo.com" id="email" name="email" required>
             </div>
             <div class="contacto-form-grupo">
             <label class="contacto-form-label" for="message">Consulta</label>
             <textarea class="contact-form-textarea" id="message" name="message" required></textarea>
             </div>
-            <button class="contacto-form-boton" type="submit">Enviar</button>
+            <button class="contacto-form-boton boton-enviar" type="submit">Enviar</button>
         </form>
         </div>
+
         <div class="contacto-right">
         <h3 class="contacto-subtitulo">Sección redes</h3>
         <div class="contacto-redes">
-            <a href="#" class="contacto-redes-link">
-            <img src="img/facebook.png" alt="Facebook">
+            <a href="https://www.facebook.com" target="_BLANK" class="contacto-redes-link">
+            <img class="contacto-redes-img" src="imagenes/logo-facebook.png" alt="Facebook">
+            <h4 class="contacto-link-nombre facebook">Nombre Empresa</h4>
             </a>
-            <a href="#" class="contacto-redes-link">
-            <img src="img/twitter.png" alt="Twitter">
+            <a href="https://twitter.com/home" target="_BLANK" class="contacto-redes-link">
+            <img class="contacto-redes-img" src="imagenes/logo-twitter.png" alt="Twitter">
+            <h4 class="contacto-link-nombre twitter">Nombre Empresa</h4>
             </a>
-            <a href="#" class="contacto-redes-link">
-            <img src="img/instagram.png" alt="Instagram">
+            <a href="https://www.instagram.com" target="_BLANK" class="contacto-redes-link">
+            <img class="contacto-redes-img" src="imagenes/logo-instagram.png" alt="Instagram">
+            <h4 class="contacto-link-nombre instagram">Nombre Empresa</h4>
             </a>
         </div>
         <div class="contacto-ubicacion">
-            <img src="ubicacion.jpg" alt="ubicación google maps">
-            <!--AQUI comento la ubicación para no sobrecargar la página, luego la descomento-->
-            <!--
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.7579819119216!2d-74.04735848426357!3d4.689303342184615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9d0e7ecdb1f1%3A0x1d61a8e54b71f757!2sTorre%20Empresarial%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1648760251478!5m2!1sen!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            --> 
+            <iframe class="contacto-ubicacion-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.7579819119216!2d-74.04735848426357!3d4.689303342184615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9d0e7ecdb1f1%3A0x1d61a8e54b71f757!2sTorre%20Empresarial%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1648760251478!5m2!1sen!2sco" width="200" height="200" style="border:1 ;" allowfullscreen="" loading="lazy"></iframe> 
         </div>
         </div>
     </section>
