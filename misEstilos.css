@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600;900&family=Montserrat:wght@400;800&display=swap');
+
+* {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+}   
+
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+h1 {    
+    font-family: 'Montserrat Alternates', sans-serif, 900;
+    font-size: 30px;
+    color: black;
+}
+
+header nav #miUL li {
+    list-style: none;  
+}
+
+header nav #miUL li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav #miUL li a:hover {
+    text-shadow: 5px 3px 5px gray;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+ul#miUL {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+.button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.botonSiguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.botonAnterior {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+div#banner {
+    display:flex;
+}
+
+div.divCuadrado {
+    width: 100%;
+    height: 500px;
+}
+
+div.divCuadrado img {
+    width: 100%;
+    height: auto;
+    position: center;
+} 
+
+div.divRojo {
+    background-color: #F6F4EF;
+}
+
+
+div.divAzul {    
+    background-color: blue;
+}
+
+div.divAmarillo {    
+    background-color: yellow;
+}
+
+div.divVerde {    
+    background-color: green;
+}
+
+.desactivo {
+    display: none;
+}
+
+
+
+
+footer {
+    font-size: 14px;
+    height:200px;
+    border-top: 1px solid black;
+}
