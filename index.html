@@ -27,9 +27,11 @@
         <div id="elemento-2" class="divCuadrado divAzul desactivo"><img src="/imagenes/slide2.png"></div>
         <div id="elemento-3" class="divCuadrado divAmarillo desactivo">Mi div 3</div>
         <div id="elemento-4" class="divCuadrado divVerde desactivo">Mi div 4</div>
+
+        <button id="botonAnterior" >&#10094;</button>
+        <button id="botonSiguiente">&#10095;</button> 
+
     </div>
-    <button id="botonAnterior" >&#10094;</button>
-    <button id="botonSiguiente">&#10095;</button>
 
     <section class="testimonios">
         <h2 class="testimonios-titulo">más de [X] negocios ya confiaron en nuestros servicios</h2>
@@ -40,6 +42,58 @@
         </div> 
     </section>
     <h2 class="contacto-titulo">Sección Contacto/Consultas</h2>
+
+    <section class="cotizacion">
+
+        <form class="cotizacion activo">
+
+            <button class="form-group skip" id="prim">Primer Paso</button>
+            <button class="form-group skip" id="seg">Segundo Paso</button>
+
+            <div class="form-group">
+              <label id="name-label" for="name">Nombre</label>
+                  <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                required
+              />
+           </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                required
+              />
+            </div>
+
+          </form>
+    
+          <form class="cotizacion desactivo">
+
+            <button class="form-group skip" id="prim">Primer Paso</button>
+            <button class="form-group skip" id="seg">Segundo Paso</button>
+
+          <div>
+           <p>selecciona el plan para obtener presupuesto</p>
+           <select id="dropdown" name="role" class="form-control" required>
+             <option disabled selected value>Seleccionar servicio</option>
+             <option value="landing">Landing page</option>
+             <option value="eCommerce">E-commerce</option>
+           </select>
+         </div>
+        
+       <button class="submit-button">Descargar PDF</button>
+
+          </form>
+
+    </section>
+
+    
     <section class="contacto">
         
         <div class="contacto-left">
