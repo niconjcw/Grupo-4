@@ -172,10 +172,10 @@ section{
     height: 450px;
     display: flex;
     justify-content: center;
-    
 }
-.contacto-form {
-    
+.contacto-titulo {
+    text-align: center;
+
 }
 .boton-enviar{
     float: right;
@@ -185,9 +185,7 @@ section{
     display: flex;
     flex-direction: column;
     width: 350px;
-    margin-top: 10px;
-    
-    
+    margin-top: 10px;   
 }
 .contacto-form-label {
     display: block;
@@ -278,12 +276,6 @@ section{
     border: 1px solid black;
     
 }
-footer {
-    font-size: 14px;
-    height:20px;
-    border-top: 1px solid black;
-}
-
 
 /* formulario cotizacion*/
 
@@ -353,4 +345,10 @@ form.cotizacion {
       background-color: #05363a;
       color: white;
       cursor: pointer;
+}
+
+footer {
+    font-size: 14px;
+    height:20px;
+    border-top: 1px solid black;
 }
