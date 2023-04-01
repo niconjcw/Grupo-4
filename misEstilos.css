@@ -175,11 +175,15 @@ section{
 }
 .contacto-titulo {
     text-align: center;
-
 }
 .boton-enviar{
     float: right;
     margin-top: 10px;
+    transition: 2s;
+    box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.6);
+}
+.boton-enviar:hover{
+    background-color: #067502;
 }
 .contacto-form-grupo {
     display: flex;
@@ -249,10 +253,17 @@ section{
 .contacto-redes-img{
     width: 40px;
     height: 40px;
+    transition: 0.5s;
 }
-
+.contacto-redes-img:hover{
+    transform: scale(1.2);
+}
 .contacto-link-nombre{
     font-size: 11px;
+    transition: 0.5s;
+}
+.contacto-link-nombre:hover{
+    opacity: 0.5;
 }
 .facebook{
     color: blue;
