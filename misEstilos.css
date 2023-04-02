@@ -291,8 +291,10 @@ section{
 /* formulario cotizacion*/
 
 section.cotizacion{
-    display: block;
-    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
 }
 
 label {
@@ -303,19 +305,20 @@ label {
 }
 
 form.cotizacion {
+    width: 60%;
     background:#a4bbbd ;
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
 }
   
 .form-group {
-    margin: 0 auto 1.25rem auto;
+    margin: 1rem auto 1.25rem 1.25rem ;
     padding: 0.25rem;
 }
   
 .form-control {
     display: block;
-    width: 100%;
+    width: 90%;
     height: 2.375rem;
     padding: 0.375rem 0.75rem;
     color: #495057;
@@ -334,7 +337,7 @@ form.cotizacion {
   
 .input-textarea {
     min-height: 120px;
-    width: 100%;
+    width: 90%;
     padding: 0.625rem;
     resize: vertical;
 }
