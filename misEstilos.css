@@ -427,7 +427,7 @@ div.divVerde {
 
 /* formulario cotizacion*/
 
-section.cotizacion{
+section#cotizacion{
     padding: 20px;
     display: flex;
     align-self: center;
@@ -453,6 +453,23 @@ form.cotizacion {
     padding: 0.25rem;
 }
   
+select{
+    margin: 1rem;
+}
+select#dropdown{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+p#arribaDelDrop{
+    margin-left: 2rem;
+}
+
+div#botonesCotizacion{
+    margin-left: 0.7rem;
+}
+
 .form-control {
     display: block;
     width: 90%;
@@ -467,7 +484,7 @@ form.cotizacion {
 }
   
 .form-control:focus {
-    border-color: #80bdff;
+    border-color: #f3f3eb ;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -480,22 +497,25 @@ form.cotizacion {
 }
   
 .submit-button {
-    display: block;
     width: 50%;
     padding: 0.75rem;
-    margin-left: 110px;
-    background: var(--color-green);
+    margin-top: 2rem;
+    background:  #73848c;
     color: white;
     border-radius: 2px;
+    box-shadow: 5px 5px 5px #052c30 ;
     cursor: pointer;
 }
   
-.skip{
-      border-radius: 2px;
-      padding: 0.75rem;
-      background-color: #05363a;
-      color: white;
-      cursor: pointer;
+div#submit-button{
+    margin-left: 2rem;
+}
+.skip {
+    border-radius: 2px;
+    padding: 0.75rem;
+    background-color: #05363a;
+    color: white;
+    cursor: pointer;
 }
 
 footer {

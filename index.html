@@ -100,62 +100,78 @@
 		</section>
     </section>
     <!--COTIZACIÓN-->
-    <section class="cotizacion">
-
-        <h2> descargá elPDF con tu cotizacion siguiendo los pasos </h2>
-
-        <form class="cotizacion activo">
-
-            <button class="form-group skip" id="prim">Primer Paso</button>
-            <button class="form-group skip" id="seg">Segundo Paso</button>
-
-            <div class="form-group">
-              <label id="name-label" for="name">Nombre</label>
-                  <input
-                type="text"
-                name="name"
-                id="name"
-                class="form-control"
-                required
-              />
-           </div>
-            <div class="form-group">
-              <label id="email-label" for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-control"
-                required
-              />
-            </div>
-
-          </form>
+    <section id="cotizacion">
     
-          <form class="cotizacion desactivo">
+      <h2> descargá el PDF con tu cotizacion siguiendo los pasos </h2>
+    
+      <form class="cotizacion activo">
+    
+      <div id="botonesCotizacion">
+        <button class="form-group skip" id="prim">Primer Paso</button>
+        <button class="form-group skip" id="seg">Segundo Paso</button>
+      </div>
+        <div class="form-group">
+          <label id="name-label" for="name">Nombre</label>
+          <input type="text" name="name" id="name" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" required />
+        </div>
+      </form>
+    
+      <form class="cotizacion desactivo">
+    
+        <div id="botonesCotizacion">
+          <button class="form-group skip" id="prim">Primer Paso</button>
+          <button class="form-group skip" id="seg">Segundo Paso</button>
+        </div>
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required />
+          </div>
+        </form>
 
-            <button class="form-group skip" id="prim">Primer Paso</button>
-            <button class="form-group skip" id="seg">Segundo Paso</button>
+      <form class="cotizacion desactivo">
 
-          <div>
-           <p>selecciona el plan para obtener presupuesto</p>
-           <select id="dropdown" name="role" class="form-control" required>
-             <option disabled selected value>Seleccionar servicio</option>
-             <option value="landing">Landing page</option>
-             <option value="eCommerce">E-commerce</option>
-           </select>
-         </div>
-        
-       <button class="submit-button">Descargar PDF</button>
+        <div id="botonesCotizacion">
+          <button class="form-group skip" id="prim">Primer Paso</button>
+          <button class="form-group skip" id="seg">Segundo Paso</button>
+        </div>
 
-          </form>
-          
-        </section> 
+        <div>
+          <p id="arribaDelDrop">marcá tu seleccion para obtener presupuesto</p>
+
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Seleccionar tipo de pagina</option>
+            <option value="landing">Landing page</option>
+            <option value="eCommerce">E-commerce</option>
+          </select>
+
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Seleccionar plan de pago</option>
+            <option value="mensual">Mensual</option>
+            <option value="anual">Anual</option>
+          </select>
+
+        </div>
+
+        <div id="submit-button">
+        <button class="submit-button">Descargar PDF</button>
+        </div>
+
+      </form>
+    
+    </section>
     <!--SOBRE NOSOTROS-->
     <section class="sobre-nosotros"></section> 
             
 
-     
+  
         
 
     
