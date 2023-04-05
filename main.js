@@ -34,6 +34,29 @@ setInterval(() => {
 }, 10000);
 
 
+// formlario cotizacion
+
+var seg = document.getElementById("seg");
+var prim = document.getElementById("prim");
+
+var secCotiz = document.getElementById("cotizacion"); // seccion cotizacion
+var formsCotiz = secCotiz.querySelectorAll("form");  // node list de todos los forms de la seccion cotizacion
+
+// console.log(formsCotiz);
+
+// .toggle agrega o quita la clase especificada
+
+// quiero iterar sobre la node list formsCotiz de elementos form
+// una node list solo se puede iterar con el metodo .forEach
+
+formsCotiz.forEach(
+    function(currentValue, currentIndex, thisE){
+        console.log(currentValue, currentIndex, thisE);
+    }
+)
+
+
+
 });
 
 
