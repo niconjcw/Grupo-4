@@ -34,7 +34,7 @@ setInterval(() => {
 }, 10000);
 
 
-// formlario cotizacion
+// formulario cotizacion
 
 var seg = document.getElementById("seg");
 var prim = document.getElementById("prim");
@@ -42,21 +42,65 @@ var prim = document.getElementById("prim");
 var secCotiz = document.getElementById("cotizacion"); // seccion cotizacion
 var formsCotiz = secCotiz.querySelectorAll("form");  // node list de todos los forms de la seccion cotizacion
 
-// console.log(formsCotiz);
 
-// .toggle agrega o quita la clase especificada
+seg.addEventListener("click", () => {
+
+    var secCotiz = document.getElementById("cotizacion");
+        
+    var formActivo = secCotiz.querySelector(".activo");
+        
+    var formSiguiente = contenedor.querySelector(".activo + .desactivo");
+    if(formSiguiente === null){
+        formSiguiente = contenedor.querySelector(".desactivo:first-of-type");
+    }
+        
+     formActivo.classList.remove("activo");
+     formActivo.classList.add("desactivo");
+
+     formSiguiente.classList.remove("desactivo");
+     formSiguiente.classList.add("activo");      
+        
+    /* UTILIZACION DE SPLIT */
+    /*
+    var idElementoActivo = elementoActivo.id; //elemento-1 => elemento-2
+    var descomponerID = idElementoActivo.split("-");
+    var numeroElemento = Number(descomponerID[1]) + 1;
+    var elementoSiguiente = contenedor.querySelector("#elemento-"+numeroElemento);
+    console.log(elementoSiguiente);
+    */
+});
 
 // quiero iterar sobre la node list formsCotiz de elementos form
 // una node list solo se puede iterar con el metodo .forEach
+// entonces solo uso el valor de length de formsCotiz
 
-formsCotiz.forEach(
-    function(currentValue, currentIndex, thisE){
-        console.log(currentValue, currentIndex, thisE);
+prim.addEventListener("click", () => {
+
+for (var i = 0; i < formsCotiz.length; i ++){
+   // console.log(formsCotiz.item(i).classList);
+
+   if (formsCotiz.item(i).classList.contains("activo") === true){
+    break;
+   }
+}
+
+var posicionAnterior = i-1; // => la posicion del elemento desactivo anterior
+
+    if(posicionAnterior === -1){
+        posicionAnterior = formsCotiz.length-1; // => voy a la posicion del ultimo elemento
     }
-)
 
 
+    formsCotiz.item(i).classList.remove("activo");
+    formsCotiz.item(i).classList.add("desactivo");
+
+    formsCotiz.item(posicionAnterior).classList.remove("desactivo");
+    formsCotiz.item(posicionAnterior).classList.add("activo");
 
 });
+
+
+
+}); // cierre del DOMcontentloaded
 
 
