@@ -450,6 +450,24 @@ div.divVerde {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.formulario-enviado{
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 100px;
+    margin: auto 20px;
+}
+
+.formulario-enviado-mensaje{
+
+}
+
+.formulario-enviado-imagen{
+    width: 100px;
+    height: 100px;
+}
+
+
 /* formulario cotizacion*/
 
 section#cotizacion{

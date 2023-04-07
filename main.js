@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
         elementoSiguiente.classList.add("activo");   
     });
 
-    //Carousel Testimonios//
-    let index = 0;
+//Carousel Testimonios//
+let index = 0;
 const images = document.querySelectorAll('.carousel img');
 
 setInterval(() => {
@@ -33,6 +33,30 @@ setInterval(() => {
     images[index].classList.add('active');
 }, 10000);
 
+//mensaje de consulta enviada
+var contacto_form = document.getElementById("contacto-form");
+var formulario_enviado = document.getElementById("formulario-enviado");
+var formulario_no_enviado = document.getElementById("fomulario-no-enviado");
+
+var contacto_input = document.getElementById("contacto-input");
+var email_input = document.getElementById("email-input");
+
+var enviar_consulta = document.getElementById("boton-enviar");
+
+function mostrar_elemento(ocultar_actual, mostrar_siguiente) {
+    ocultar_actual.style.display = "none";
+    mostrar_siguiente.style.display = "flex";
+}
+
+enviar_consulta.addEventListener("click", function (e) {
+    if (contacto_input.value && email_input.value) {
+        mostrar_elemento(contacto_form, formulario_enviado)
+        e.preventDefault();
+    } else{
+        formulario_no_enviado.style.display = "flex";
+    }
+
+})
 
 // formulario cotizacion
 
