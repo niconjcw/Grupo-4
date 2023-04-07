@@ -452,6 +452,10 @@ div.divVerde {
 
 /* formulario cotizacion*/
 
+.invisible {
+    display: none;
+}
+
 section#cotizacion{
     padding: 20px;
     display: flex;

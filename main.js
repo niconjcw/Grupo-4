@@ -36,38 +36,31 @@ setInterval(() => {
 
 // formulario cotizacion
 
-var seg = document.getElementById("seg");
-var prim = document.getElementById("prim");
+var seg = document.getElementById("seg"); // boton siguiente
+var prim = document.getElementById("prim"); // boton anterior
 
-var secCotiz = document.getElementById("cotizacion"); // seccion cotizacion
-var formsCotiz = secCotiz.querySelectorAll("form");  // node list de todos los forms de la seccion cotizacion
+var secCotiz = document.getElementById("cotizacion"); // <seccion> cotizacion
+var formsCotiz = secCotiz.querySelectorAll("form");  // node list de todos los <forms> de la <seccion> cotizacion
 
 
-seg.addEventListener("click", () => {
-
-    var secCotiz = document.getElementById("cotizacion");
+seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
         
-    var formActivo = secCotiz.querySelector(".activo");
+    var formActivo = secCotiz.querySelector(".visible");  // form que tenga clase "visible"
         
-    var formSiguiente = contenedor.querySelector(".activo + .desactivo");
-    if(formSiguiente === null){
-        formSiguiente = contenedor.querySelector(".desactivo:first-of-type");
-    }
-        
-     formActivo.classList.remove("activo");
-     formActivo.classList.add("desactivo");
+    var formSiguiente = secCotiz.querySelector(".visible + .invisible"); // el form que le sigue al que tiene clase visible
 
-     formSiguiente.classList.remove("desactivo");
-     formSiguiente.classList.add("activo");      
-        
-    /* UTILIZACION DE SPLIT */
     /*
-    var idElementoActivo = elementoActivo.id; //elemento-1 => elemento-2
-    var descomponerID = idElementoActivo.split("-");
-    var numeroElemento = Number(descomponerID[1]) + 1;
-    var elementoSiguiente = contenedor.querySelector("#elemento-"+numeroElemento);
-    console.log(elementoSiguiente);
+    if(formSiguiente === null){  // si llega al ultimo form del conjunto de secCotiz
+        formSiguiente = formsCotiz.querySelector(".invisible:first-of-type"); // desactiva el primer form??
+    }  // esto es para que vuelva a empezar (?)
     */
+        
+     formActivo.classList.remove("visible");     // le saco la clase visible al primer form que es el que la tiene
+     formActivo.classList.add("invisible");     // le doy clase invisible
+
+     formSiguiente.classList.remove("invisible");  // al form siguiente le saco .invisible
+     formSiguiente.classList.add("visible");        // y le doy .visible
+        
 });
 
 // quiero iterar sobre la node list formsCotiz de elementos form
@@ -76,26 +69,26 @@ seg.addEventListener("click", () => {
 
 prim.addEventListener("click", () => {
 
-for (var i = 0; i < formsCotiz.length; i ++){
-   // console.log(formsCotiz.item(i).classList);
+    for (var i = 0; i < formsCotiz.length; i ++){  // los forms dentro de la seccion secCotiz
+    // console.log(formsCotiz.item(i).classList);
 
-   if (formsCotiz.item(i).classList.contains("activo") === true){
-    break;
-   }
-}
+    if (formsCotiz.item(i).classList.contains("visible") === true){
+        break;
+    }
+    }
 
-var posicionAnterior = i-1; // => la posicion del elemento desactivo anterior
+    var posicionAnterior = i-1; // => la posicion del elemento desactivo anterior
 
     if(posicionAnterior === -1){
         posicionAnterior = formsCotiz.length-1; // => voy a la posicion del ultimo elemento
     }
 
 
-    formsCotiz.item(i).classList.remove("activo");
-    formsCotiz.item(i).classList.add("desactivo");
+    formsCotiz.item(i).classList.remove("visible");
+    formsCotiz.item(i).classList.add("invisible");
 
-    formsCotiz.item(posicionAnterior).classList.remove("desactivo");
-    formsCotiz.item(posicionAnterior).classList.add("activo");
+    formsCotiz.item(posicionAnterior).classList.remove("invisible");
+    formsCotiz.item(posicionAnterior).classList.add("visible");
 
 });
 
