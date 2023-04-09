@@ -567,8 +567,9 @@ div#submit-button{
 
 footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     align-items: baseline;
     border-bottom: 1px solid black;
     font-size: 14px;
@@ -583,8 +584,9 @@ footer {
     color: rgb(7, 10, 20);
     background-color: rgb(76, 113, 135);
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
     border-bottom: 1px solid black;
 }
