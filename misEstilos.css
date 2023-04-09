@@ -566,8 +566,25 @@ div#submit-button{
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    height:100px;
+    color: rgb(7, 10, 20);
+    background-color: #05363a;
+    text-align: center;
+}
+.fa {
     font-size: 14px;
     height:20px;
-    color: white;
-    background-color: #243e4dff;
+    color: rgb(7, 10, 20);
+    background-color: rgb(76, 113, 135);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
 }
