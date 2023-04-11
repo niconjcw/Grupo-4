@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nombre de la Empresa</title>
-        <link rel="stylesheet" type="text/css" href="./misEstilos.css">
-        <script type="text/javascript" src="./main.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Empresa</title>
+    <link rel="stylesheet" type="text/css" href="./misEstilos.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+</head>
+<body>
 <header>            
     <h1>Nombre de la Empresa</h1>
             <nav>
                 <ul id="miUL">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#promo">Promo página web</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#servicios">¿Qué hacemos?</a></li>
+                    <li><a href="#cotizacion">Cotizar</a></li>
                     <li><a href="#quienes-somos">¿Quienes somos?</a></li>
-                    <li><a href="#que-hacemos">¿Qué hacemos?</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
 </header>
+
 <main>  
-    <div id="banner">
-        <div id="elemento-1" class="divCuadrado divRojo activo"><img src="imagenes/slide1.png"></div>
-        <div id="elemento-2" class="divCuadrado divAzul desactivo"><img src="imagenes/slide2.png"></div>
-        <div id="elemento-3" class="divCuadrado divAmarillo desactivo">Mi div 3</div>
-        <div id="elemento-4" class="divCuadrado divVerde desactivo">Mi div 4</div>
-
-        <button id="botonAnterior" >&#10094;</button>
-        <button id="botonSiguiente">&#10095;</button> 
-
+  <div id="carrouselImagenes" class="hcg-slider">
+    <div class="hcg-slide-container">
+    <div class="hcg-slider-body">
+      <a class="hcg-slides animated" style="display:flex">
+        <span class="hcg-slide-number">1/5</span>
+        <img src="/imagenes/slide1.png" alt="slide 1">
+        <span class="hcg-slide-text"></span>
+      </a>
     </div>
-    <!--SERVICIOS-->
-    <section class="servicios">
+    <a href="#" id="hcg-slide-prev">❮</a>
+    <a href="#" id="hcg-slide-next">❯</a>
+  </div>
+  </div>
+  
+    
+<!--SERVICIOS-->
+    <section class="servicios" id="servicios">
         <img class="fondo_servicios" src="imagenes/fondo_servicios.png" alt="">
         <section class="seccion-servicios">
-			<div class="servicios-titulo">Nuestros Servicios</div>
+			<div class="servicios-titulo"><h1>Nuestros Servicios</h1></div>
 			<div class="box box1">
 				<h3 class="servicio-subtitulo">One-page</h3>
 				<img class="servicio-img" src="imagenes/one-page.png" alt="">
-				<p class="servicio-texto">Si estás partiendo, ésta es tu opción. Muestra todo en una sóla hoja.</p>
+				<p class="servicio-texto">Si recién estás empezando, ésta es tu opción. <br>Mostrá todo en una sola página!</p>
 			</div>
 			<div class="box box2">
-				<h3 class="servicio-subtitulo">Página Corporativa</h3>
+				<h3 class="servicio-subtitulo">Páginas corporativas</h3>
 				<img class="servicio-img" src="imagenes/corporation2.png" alt="">
-				<p class="servicio-texto">¿Querés mostrar mayor profesionalismo? Mostrá todo en diferentes hojas.</p>
+				<p class="servicio-texto">¿Querés mostrar profesionalismo?<br>Cada cosa en su propia página!</p>
 			</div>
 			<div class="box box3">
 				<h3 class="servicio-subtitulo">Tiendas web – Ecommerce</h3>
 				<img class="servicio-img" src="imagenes/ecommerce2.png" alt="">
-				<p class="servicio-texto">Nosotros armamos tu nueva tienda con carrito de compras.</p>
+				<p class="servicio-texto">Armamos nueva tienda con carrito de compras. <br>Total independencia!</p>
 			</div>
 			<div class="box box4">
-				<h3 class="servicio-subtitulo">Landing Page</h3>
+				<h3 class="servicio-subtitulo">Landing Pages</h3>
 				<img class="servicio-img" src="imagenes/landing-page.png" alt="">
-				<p class="servicio-texto">Página web enfocada en una única oferta o acción.</p>
+				<p class="servicio-texto">Ofrecés un solo servicio o producto? <br>Todo en una sola pantalla!</p>
 			</div>
 			<div class="box box5">
-				<h3 class="servicio-subtitulo">Portfolio digital</h3>
+				<h3 class="servicio-subtitulo">Portfolios digitales</h3>
 				<img class="servicio-img" src="imagenes/portfolio2.jpg" alt="">
-				<p class="servicio-texto">Destacamos tus logros y habilidades de manera efectiva.</p>
+				<p class="servicio-texto">Destacá tus logros y habilidades de manera efectiva. <br>Todo tu contenido en un sólo lugar!</p>
 			</div>
 			<div class="box box6">
-				<h3 class="servicio-subtitulo">Web y aplicación móvil</h3>
+				<h3 class="servicio-subtitulo">Webs y aplicaciones móviles</h3>
 				<img class="servicio-img" src="imagenes/mobile_web.jpg" alt="">
-				<p class="servicio-texto">Más contenido, más accesibilidad y más ganancias</p>
+				<p class="servicio-texto">Más contenido, más accesibilidad y más ganancias!</p>
 			</div>
-			<div class="servicios-subtitulo">Adicionalmente, todas nuestras páginas web cuentan con:</div>
+			<div class="servicios-subtitulo"><h2>Adicionalmente, todas nuestras páginas web cuentan con:</h2></div>
 			<div class="box box8">
 				<img src="imagenes/caract_ssl_certificado.png" alt="" class="caract-icono">
 				<h4 class="caract-titulo">Certificado SSL</h4>
@@ -81,17 +90,17 @@
 			<div class="box box10">
 				<img src="imagenes/caract_cloud.png" alt="" class="caract-icono">
 				<h4 class="caract-titulo">Servidor</h4>
-				<p class="caract-descripcion">Gratis por un año</p>
+				<p class="caract-descripcion">Gratis por un año!</p>
 			</div>
 			<div class="box box11">
 				<img src="imagenes/caract_redes_like.png" alt="" class="caract-icono">
 				<h4 class="caract-titulo">Redes sociales</h4>
-				<p class="caract-descripcion">Comparte link de tus redes sociales</p>
+				<p class="caract-descripcion">Linkeá todas tus redes sociales!</p>
 			</div>
 			<div class="box box12">
 				<img src="imagenes/caract_whatsapp.png" alt="" class="caract-icono">
 				<h4 class="caract-titulo">WhatsApp</h4>
-				<p class="caract-descripcion">Conecta con todos tus clientes.</p>
+				<p class="caract-descripcion">WhatsAppeá con todos tus clientes!</p>
 			</div>
 			<div class="box box13">
 				<img src="imagenes/caract_engranaje_admin.png" alt="" class="caract-icono">
@@ -101,57 +110,59 @@
 		</section>
     </section>
 
-    <!--COTIZACIÓN-->
+<!--COTIZACIÓN-->
     <section id="cotizacion">
-    
-      <h2> descargá el PDF con tu cotizacion siguiendo los pasos </h2>
+      <div class="cotizacion-titulo" ><h1>Cotizá tu web!</h1></div>
+      <h2>Descargá un PDF con tu cotización</h2>
     
       <form class="cotizacion visible">
     
-      <div id="botonesCotizacion">
-        <button class="form-group skip" id="prim">Primer paso</button>
-        <button class="form-group skip" id="seg">Siguiente paso</button>
-      </div>
+      
         <div class="form-group">
-          <label id="name-label" for="name">Nombre</label>
+          <label id="name-label" for="name">Tu nombre</label>
           <input type="text" name="nombre" id="name" class="form-control" required />
         </div>
         <div class="form-group">
           <label id="email-label" for="email">Email</label>
           <input type="email" name="email" id="email" class="form-control" required />
         </div>
+        <div id="botonesCotizacion">
+        <button class="form-group skip" id="prim"><</button>
+        <button class="form-group skip" id="seg">></button>
+      </div>
       </form>
     
       <form class="cotizacion invisible">
     
-        <div id="botonesCotizacion">
-          <button class="form-group skip" id="prim">Paso anterior </button>
-          <button class="form-group skip" id="seg">Siguiente paso</button>
-        </div>
+        
           <div class="form-group">
             <label id="empresa" for="name">Nombre de la empresa</label>
             <input type="text" name="empresa" id="empresa" class="form-control" required />
           </div>
           <div class="form-group">
-            <label id="servicio" for="servicio">que servicios brinda tu empresa</label>
+            <label id="servicio" for="servicio">Qué servicios brinda tu empresa?</label>
             <input type="text" name="servicios" id="servicios" class="form-control" required />
           </div>
+          <div id="botonesCotizacion">
+          <button class="form-group skip" id="prim"><</button>
+          <button class="form-group skip" id="seg">></button>
+        </div>
         </form>
 
       <form class="cotizacion invisible">
 
-        <div id="botonesCotizacion">
-          <button class="form-group skip" id="prim">Paso anterior</button>
-          <button class="form-group skip" id="seg">paso final</button>
-        </div>
-
         <div>
-          <p id="arribaDelDrop">marcá tu seleccion para obtener presupuesto</p>
+          <p id="arribaDelDrop">Seleccioná para obtener presupuesto</p>
 
           <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>Seleccionar tipo de pagina</option>
-            <option value="landing">Landing page</option>
+            <option disabled selected value>Seleccionar tipo de página</option>
+            <option value="landingPage">Landing page</option>
             <option value="eCommerce">E-commerce</option>
+            <option value="onePage">One-Page</option>
+            <option value="portfolioDigital">Portfolio Digital</option>
+            <option value="paginaCorporativa">Página Corporativa</option>
+            <option value="appMovil">Web / App Móvil</option>
+
           </select>
 
           <select id="dropdown" name="role" class="form-control" required>
@@ -162,37 +173,68 @@
 
         </div>
 
+        <div id="botonesCotizacion">
+          <button class="form-group skip" id="prim"><</button>
+          <button class="form-group skip" id="seg">></button>
+        </div>
+
         <div id="submit-button">
-        <button class="submit-button">Descargar PDF</button>
+        <button class="submit-button">Descargar!</button>
         </div>
 
       </form>
-    
+
+<!--TESTIMONIOS-->
+      <div class="testimonios-titulo"><h2>Más de 1.426 negocios ya confiaron en nuestros servicios!</h2></div>
+      <div class="carousel">
+          <img src="imagenes/Emprendedora.png" alt="Imagen 1">
+          <img src="imagenes/Empresario.png" alt="Imagen 2">
+          <img src="imagenes/Influencer.png" alt="Imagen 3">
+      </div> 
+
     </section>
-    <!--SOBRE NOSOTROS-->
-    <section class="sobre-nosotros"></section> 
-            
 
-  
-        
-
-    
-    <!--TESTIMONIOS-->
-    <section class="testimonios">
-        <h2 class="testimonios-titulo">Más de [X] negocios ya confiaron en nuestros servicios</h2>
-        <div class="carousel">
-            <img src="imagenes/Emprendedora.png" alt="Imagen 1">
-            <img src="imagenes/Empresario.png" alt="Imagen 2">
-            <img src="imagenes/Influencer.png" alt="Imagen 3">
-        </div> 
-    </section>
-    
-
+<!--QUIENES SOMOS-->
+    <section class="quienes-somos" id="quienes-somos">
+      <div class="quienes-somos-titulo"><h1>Conocenos!</h1></div>
+			<div class="box box1">
+				<img src="/imagenes/avatar-ej1.png" alt="" class="caract-icono">
+				<h4 class="caract-titulo">Nombre</h4>
+				<p class="caract-descripcion">Descripción</p>
+			</div>
+			<div class="box box2">
+				<img src="imagenes/avatar-ej2.png" alt="" class="caract-icono">
+				<h4 class="caract-titulo">Nombre</h4>
+				<p class="caract-descripcion">Descripción</p>
+			</div>
+			<div class="box box3">
+				<img src="imagenes/avatar-ej1.png" alt="" class="caract-icono">
+				<h4 class="caract-titulo">Nombre</h4>
+				<p class="caract-descripcion">Descripción</p>
+			</div>
+			<div class="box box4">
+				<img src="imagenes/avatar-ej2.png" alt="" class="caract-icono">
+				<h4 class="caract-titulo">Nombre</h4>
+				<p class="caract-descripcion">Descripción</p>
+			</div>
+			<div class="box box5">
+				<img src="imagenes/avatar-ej1.png" alt="" class="caract-icono">
+				<h4 class="caract-titulo">Nombre</h4>
+				<p class="caract-descripcion">Descripción</p>
+			</div>
+			<div class="box box6">
+				<img src="imagenes/avatar-ej2.png" alt="" class="caract-icono">
+				<h4 class="caract-titulo">Nombre</h4>
+				<p class="caract-descripcion">Descripción</p>
+			</div>
+			</div>
+    </section> 
 </main>
-        <h2 class="contacto-titulo">Contacto</h2>
-    <!--CONTACTO-->
-    <section id="contacto" class="contacto">
         
+<!--CONTACTO-->
+<div id="contacto">
+    <h1 class="contacto-titulo">Contacto</h1>
+    <section id="contacto" class="contacto">
         <div class="contacto-left">
         <form id="contacto-form" class="contacto-form" style="display: block;">
             <div class="contacto-form-grupo">
@@ -208,10 +250,10 @@
             <textarea class="contact-form-textarea" id="message" name="message" required></textarea>
             </div>
             <button id="boton-enviar" class="contacto-form-boton boton-enviar" type="submit">Enviar</button>
-            <div id="formulario-no-enviado" class="formulario-no-enviado" style="display: flex; color: rgb(155, 155, 155);">*Ingrese todos los campos</div>
+            <div id="formulario-no-enviado" class="formulario-no-enviado" style="display: flex; color: rgb(155, 155, 155);">* todos los campos son obligatorios</div>
         </form>
         <div id="formulario-enviado" class="formulario-enviado" style="display: none;">
-            <p class="formulario-enviado-mensaje">Mensaje enviado, en breve le respondemos</p>
+            <p class="formulario-enviado-mensaje">Listo! En breve nos contactaremos.</p>
             <img class="formulario-enviado-imagen" src="imagenes/mensaje-enviado.png" alt="">
         </div>
         </div>
@@ -221,15 +263,15 @@
         <div class="contacto-redes">
             <a href="https://www.facebook.com" target="_BLANK" class="contacto-redes-link">
             <img class="contacto-redes-img" src="imagenes/logo-facebook.png" alt="Facebook">
-            <h4 class="contacto-link-nombre facebook">Nombre Empresa</h4>
+            <h4 class="contacto-link-nombre facebook"></h4>
             </a>
             <a href="https://twitter.com/home" target="_BLANK" class="contacto-redes-link">
             <img class="contacto-redes-img" src="imagenes/logo-twitter.png" alt="Twitter">
-            <h4 class="contacto-link-nombre twitter">Nombre Empresa</h4>
+            <h4 class="contacto-link-nombre twitter"></h4>
             </a>
             <a href="https://www.instagram.com" target="_BLANK" class="contacto-redes-link">
             <img class="contacto-redes-img" src="imagenes/logo-instagram.png" alt="Instagram">
-            <h4 class="contacto-link-nombre instagram">Nombre Empresa</h4>
+            <h4 class="contacto-link-nombre instagram"></h4>
             </a>
         </div>
         <div class="contacto-ubicacion">
@@ -237,29 +279,9 @@
         </div>
         </div>
     </section>
-
-     <footer>
-      <div class="footer">
-        <section class="footer social">
-            <ul id="social-sidebar" class="footer social menu">
-                <li id="" class="fa fa-facebook">
-                    <a title="Facebook" rel="nofollow" href="https://www.facebook.com/">Facebook</a>
-                </li>
-                <li id="" class="fa fa-twitter">
-                    <a title="Facebook" rel="nofollow" href="https://twitter.com/?lang=es">Twitter</a>
-                </li>
-                <li id="" class="fa fa-instagram">
-                    <a title="Instagram" rel="nofollow" href="https://instagram.com/">Instagram</a>
-                </li>
-            </ul>
-        </section>
-        <section class="footer-logo">
-          <a class="logo">
-            <img scr="imagenes/logo-empresa.png">
-          </a>
-          <p class="copyright">Copyright 2023, Nombre de la empresa.</p>
-        </section>
-      </div>
-     </footer>
-    </body>
+</div>
+<footer>
+        Copyright 2023, Nombre de la empresa.</p>
+</footer>
+</body>
 </html>
