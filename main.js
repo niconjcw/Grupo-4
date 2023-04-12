@@ -107,6 +107,28 @@ enviar_consulta.addEventListener("click", function (e) {
 
 })
 
+//conexión API clima
+const form_api = document.getElementById('form-api');
+const result = document.getElementById('result');
+
+form_api.addEventListener('submit', function (e){
+    e.preventDefault();
+    const ciudad = form_api.elements['city'].value;
+    const apiKey = '153107839f08772bc125961139738fd5';
+
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`)
+    .then(response => response.json())
+    .then(data => {
+        const tiempo_descripcion = data.weather[0].description;
+        const temperatura = data.main.temp;
+        result.innerHTML = `El clima en ${ciudad}: <b>${temperatura}°C.</b> - ${tiempo_descripcion} `;
+    })
+    .catch(error => {
+        console.error(error);
+        result.innerHTML = 'Error al obtener el clima.';
+    });
+});
+
 // formulario cotizacion
 
 var seg = document.getElementById("seg"); // boton siguiente

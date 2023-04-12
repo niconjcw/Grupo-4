@@ -261,20 +261,26 @@
         <div class="contacto-redes">
             <a href="https://www.facebook.com" target="_BLANK" class="contacto-redes-link">
             <img class="contacto-redes-img" src="imagenes/logo-facebook.png" alt="Facebook">
-            <h4 class="contacto-link-nombre facebook"></h4>
+  
             </a>
             <a href="https://twitter.com/home" target="_BLANK" class="contacto-redes-link">
             <img class="contacto-redes-img" src="imagenes/logo-twitter.png" alt="Twitter">
-            <h4 class="contacto-link-nombre twitter"></h4>
+
             </a>
             <a href="https://www.instagram.com" target="_BLANK" class="contacto-redes-link">
             <img class="contacto-redes-img" src="imagenes/logo-instagram.png" alt="Instagram">
-            <h4 class="contacto-link-nombre instagram"></h4>
+    
             </a>
         </div>
         <div class="contacto-ubicacion">
             <iframe class="contacto-ubicacion-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.7579819119216!2d-74.04735848426357!3d4.689303342184615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9d0e7ecdb1f1%3A0x1d61a8e54b71f757!2sTorre%20Empresarial%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1648760251478!5m2!1sen!2sco" width="300" height="200" style="border:1 ;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <form id="form-api">
+          <label for="city">Ingresá el nombre de la ciudad:</label>
+          <input type="text" id="city" name="city" required>
+          <button class="btn-api" type="submit">Consultar clima</button>
+        </form>
+        <p id="result"></p>
         </div>
     </section>
 </div>
