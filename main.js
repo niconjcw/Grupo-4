@@ -122,11 +122,11 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
         
     var formSiguiente = secCotiz.querySelector(".visible + .invisible"); // el form que le sigue al que tiene clase visible
 
-    /*
+    
     if(formSiguiente === null){  // si llega al ultimo form del conjunto de secCotiz
         formSiguiente = formsCotiz.querySelector(".invisible:first-of-type"); // desactiva el primer form??
     }  // esto es para que vuelva a empezar (?)
-    */
+    
         
      formActivo.classList.remove("visible");     // le saco la clase visible al primer form que es el que la tiene
      formActivo.classList.add("invisible");     // le doy clase invisible
