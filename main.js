@@ -113,7 +113,7 @@ var seg = document.getElementById("seg"); // boton siguiente
 var prim = document.getElementById("prim"); // boton anterior
 
 var secCotiz = document.getElementById("cotizacion"); // <seccion> cotizacion
-var formsCotiz = secCotiz.querySelectorAll("form");  // node list de todos los <forms> de la <seccion> cotizacion
+var formsCotiz = secCotiz.querySelectorAll("#form");  // node list de todos los <divs> con id #form de la <seccion> cotizacion
 
 
 seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
@@ -138,16 +138,16 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
 
 // quiero iterar sobre la node list formsCotiz de elementos form
 // una node list solo se puede iterar con el metodo .forEach
-// entonces solo uso el valor de length de formsCotiz
+// entonces solo uso el valor de length de formsCotiz para tener el numero indice de cada elemento
 
 prim.addEventListener("click", () => {
 
-    for (var i = 0; i < formsCotiz.length; i ++){  // los forms dentro de la seccion secCotiz
+    for (var i = 0; i < formsCotiz.length; i ++){  
     // console.log(formsCotiz.item(i).classList);
 
     if (formsCotiz.item(i).classList.contains("visible") === true){
         break;
-    }
+    }               // si el elemento en el indice tiene clase visible, salir del for
     }
 
     var posicionAnterior = i-1; // => la posicion del elemento desactivo anterior

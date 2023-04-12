@@ -111,13 +111,16 @@
     </section>
 
 <!--COTIZACIÓN-->
+
     <section id="cotizacion">
+
       <div class="cotizacion-titulo" ><h1>Cotizá tu web!</h1></div>
       <h2>Descargá un PDF con tu cotización</h2>
     
-      <form class="cotizacion visible">
+      <form class="cotizacion">
+
+      <div id="form" class="cotizacion visible">
     
-      
         <div class="form-group">
           <label id="name-label" for="name">Tu nombre</label>
           <input type="text" name="nombre" id="name" class="form-control" required />
@@ -126,15 +129,11 @@
           <label id="email-label" for="email">Email</label>
           <input type="email" name="email" id="email" class="form-control" required />
         </div>
-        <div id="botonesCotizacion">
-        <button class="form-group skip" id="prim"><</button>
-        <button class="form-group skip" id="seg">></button>
+
       </div>
-      </form>
-    
-      <form class="cotizacion invisible">
-    
         
+      <div id="form" class="cotizacion invisible">
+    
           <div class="form-group">
             <label id="empresa" for="name">Nombre de la empresa</label>
             <input type="text" name="empresa" id="empresa" class="form-control" required />
@@ -143,13 +142,10 @@
             <label id="servicio" for="servicio">Qué servicios brinda tu empresa?</label>
             <input type="text" name="servicios" id="servicios" class="form-control" required />
           </div>
-          <div id="botonesCotizacion">
-          <button class="form-group skip" id="prim"><</button>
-          <button class="form-group skip" id="seg">></button>
-        </div>
-        </form>
+         
+      </div>
 
-      <form class="cotizacion invisible">
+      <div id="form" class="cotizacion invisible">
 
         <div>
           <p id="arribaDelDrop">Seleccioná para obtener presupuesto</p>
@@ -171,15 +167,17 @@
             <option value="anual">Anual</option>
           </select>
 
+          <div id="submit-button">
+            <button class="submit-button">Descargar!</button>
+            </div>
+    
         </div>
+
+      </div> 
 
         <div id="botonesCotizacion">
           <button class="form-group skip" id="prim"><</button>
           <button class="form-group skip" id="seg">></button>
-        </div>
-
-        <div id="submit-button">
-        <button class="submit-button">Descargar!</button>
         </div>
 
       </form>
