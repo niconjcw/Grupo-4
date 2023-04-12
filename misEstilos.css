@@ -687,18 +687,24 @@ div#submit-button{
 }
 
 footer {
-    display: block;
-    font-size: 10px;
-    height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
     padding: 10px;
-    color: grey;
-    background-color: white;
-    text-align: center;
-}
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
 
 .fa {
     font-size: 14px;
-    height:20px;
+    height:40px;
     color: gray;
     background-color: #efeceb;
     display: flex;
