@@ -122,12 +122,20 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
         
     var formSiguiente = secCotiz.querySelector(".visible + .invisible"); // el form que le sigue al que tiene clase visible
 
-    
-    if(formSiguiente === null){  // si llega al ultimo form del conjunto de secCotiz
-        formSiguiente = formsCotiz.querySelector(".invisible:first-of-type"); // desactiva el primer form??
-    }  // esto es para que vuelva a empezar (?)
-    
+    /*
+    if(formSiguiente === null){  // si llega al ultimo <div #form> del conjunto de secCotiz
         
+       formSiguiente = formsCotiz.querySelector(".invisible:first-of-type"); // muestra el primer div  // esto es para que vuelva a empezar
+    }  
+    */
+
+    // hace que no pueda avanzar despues del ultimo div
+    if(formSiguiente === null){
+        var divBotones = document.getElementById("#botonesCotizacion");
+        divBotones.classList.add("invisible");
+    }
+    
+
      formActivo.classList.remove("visible");     // le saco la clase visible al primer form que es el que la tiene
      formActivo.classList.add("invisible");     // le doy clase invisible
 
@@ -150,12 +158,13 @@ prim.addEventListener("click", () => {
     }               // si el elemento en el indice tiene clase visible, salir del for
     }
 
-    var posicionAnterior = i-1; // => la posicion del elemento desactivo anterior
+    var posicionAnterior = i-1; // => la posicion del elemento desactivo anterior al activo
 
+    
     if(posicionAnterior === -1){
         posicionAnterior = formsCotiz.length-1; // => voy a la posicion del ultimo elemento
     }
-
+    
 
     formsCotiz.item(i).classList.remove("visible");
     formsCotiz.item(i).classList.add("invisible");
