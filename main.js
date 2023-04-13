@@ -133,10 +133,9 @@ form_api.addEventListener('submit', function (e){
 
 var seg = document.getElementById("seg"); // boton siguiente
 var prim = document.getElementById("prim"); // boton anterior
-
+prim.classList.add("invisible");
 var secCotiz = document.getElementById("cotizacion"); // <seccion> cotizacion
 var formsCotiz = secCotiz.querySelectorAll("#form");  // node list de todos los <divs> con id #form de la <seccion> cotizacion
-
 
 seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
         
@@ -144,16 +143,9 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
         
     var formSiguiente = secCotiz.querySelector(".visible + .invisible"); // el form que le sigue al que tiene clase visible
 
-    /*
-    if(formSiguiente === null){  // si llega al ultimo <div #form> del conjunto de secCotiz
-        
-       formSiguiente = formsCotiz.querySelector(".invisible:first-of-type"); // muestra el primer div  // esto es para que vuelva a empezar
-    }  
-    */
-
     // hace que no pueda avanzar despues del ultimo div
     if(formSiguiente === null){
-        var divBotones = document.getElementById("#botonesCotizacion");
+        var divBotones = document.getElementById("botonesCotizacion");
         divBotones.classList.add("invisible");
     }
     
@@ -165,10 +157,6 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
      formSiguiente.classList.add("visible");        // y le doy .visible
         
 });
-
-// quiero iterar sobre la node list formsCotiz de elementos form
-// una node list solo se puede iterar con el metodo .forEach
-// entonces solo uso el valor de length de formsCotiz para tener el numero indice de cada elemento
 
 prim.addEventListener("click", () => {
 
@@ -185,6 +173,9 @@ prim.addEventListener("click", () => {
     
     if(posicionAnterior === -1){
         posicionAnterior = formsCotiz.length-1; // => voy a la posicion del ultimo elemento
+    } else {
+        var divBotones = document.getElementById("botonesCotizacion");
+        divBotones.classList.remove("invisible");
     }
     
 
@@ -196,8 +187,4 @@ prim.addEventListener("click", () => {
 
 });
 
-
-
 }); // cierre del DOMcontentloaded
-
-
