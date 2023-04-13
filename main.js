@@ -133,7 +133,7 @@ form_api.addEventListener('submit', function (e){
 
 var seg = document.getElementById("seg"); // boton siguiente
 var prim = document.getElementById("prim"); // boton anterior
-prim.classList.add("invisible");
+prim.classList.add("invisible"); // Se agrega la clase "invisible" al botón anterior para que no sea visible inicialmente
 var secCotiz = document.getElementById("cotizacion"); // <seccion> cotizacion
 var formsCotiz = secCotiz.querySelectorAll("#form");  // node list de todos los <divs> con id #form de la <seccion> cotizacion
 
@@ -143,13 +143,13 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
         
     var formSiguiente = secCotiz.querySelector(".visible + .invisible"); // el form que le sigue al que tiene clase visible
 
-    // hace que no pueda avanzar despues del ultimo div
+    // Si no hay un formulario siguiente, se oculta la sección de botones
     if(formSiguiente === null){
         var divBotones = document.getElementById("botonesCotizacion");
         divBotones.classList.add("invisible");
     }
     
-
+    // Se cambian las clases del formulario activo y el siguiente para que el siguiente se muestre y el activo se oculte
      formActivo.classList.remove("visible");     // le saco la clase visible al primer form que es el que la tiene
      formActivo.classList.add("invisible");     // le doy clase invisible
 
@@ -159,10 +159,10 @@ seg.addEventListener("click", () => {  // cuando clikeo el boton siguiente
 });
 
 prim.addEventListener("click", () => {
-
+    //Se busca el formulario activo en la lista de formularios de cotización
     for (var i = 0; i < formsCotiz.length; i ++){  
-    // console.log(formsCotiz.item(i).classList);
-
+   
+    //Si el formulario en la posición actual del for tiene la clase "visible", se sale del for   
     if (formsCotiz.item(i).classList.contains("visible") === true){
         break;
     }               // si el elemento en el indice tiene clase visible, salir del for
