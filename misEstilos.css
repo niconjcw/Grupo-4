@@ -508,7 +508,7 @@ div#submit-button{
     border-bottom-right-radius: 0;
     border: 1px solid #3d2e5d;
     width: 30%;
-    height: 450px;
+    height: 460px;
     display: flex;
     justify-content: center;
     background-color: #5EC2DA;
@@ -525,11 +525,23 @@ div#submit-button{
 .boton-enviar{
     width: 100%;
     margin-top: 10px;
-    transition: 2s;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
-.boton-enviar:hover{
-    background-color: #5EC2DA;
+.btn-api:hover, .boton-enviar:hover{
+    background-color: #eba524;
+}
+
+.btn-api:active, .boton-enviar:active{
+    transform: scale(0.90);
+    -webkit-transform: scale(0.90);
+    -moz-transform: scale(0.90);
+    -ms-transform: scale(0.90);
+    -o-transform: scale(0.90);
 }
 
 .contacto-form-grupo {
@@ -593,7 +605,7 @@ div#submit-button{
     cursor: pointer;
     font-weight: bold;
     border: 1px solid #3d2e5d
- }
+}
 
 .contacto-right {
     display: flex;
@@ -618,14 +630,6 @@ div#submit-button{
     gap: 20px;
 }
 
-.contacto-redes-link {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .contacto-redes-img{
     width: auto;
     height: 40px;
@@ -636,18 +640,9 @@ div#submit-button{
     transform: scale(1.2);
 }
 
-.contacto-link-nombre{
-    font-size: 11px;
-    transition: 0.5s;
-}
-
-.contacto-link-nombre:hover{
-    opacity: 0.5;
-}
-
 .contacto-ubicacion {
     border-radius: 10px;
-    height: 250px;
+    height: 245px;
     width: 340px;
     display: flex;
     justify-content: center;
@@ -683,6 +678,22 @@ div#submit-button{
 
 #result{
     font-size: 12px;
+}
+
+.btn-api {
+    background-color: #FBC92E;
+    color: #3d2e5d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #3d2e5d;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 footer {
@@ -722,19 +733,6 @@ footer {
     color: #efeceb;
     font-size: 10px;
   }
-
- 
-
-.btn-api {
-    background-color: #FBC92E;
-    color: #3d2e5d;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    border: 1px solid #3d2e5d
-}
 
 input {
     background-color: white;

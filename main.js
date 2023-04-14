@@ -67,22 +67,22 @@ document.addEventListener("DOMContentLoaded", () => {
     })();
     
 
-//Carousel Testimonios//
+//Carousel Testimonios
 let index = 0;
 const images = document.querySelectorAll('.carousel img');
 
 setInterval(() => {
     index++;
     if (index > images.length - 1) {
-    index = 0;
+    index = 0; //index se resetea una vez que la lista de images llega al final
     }
     images.forEach(img => {
     img.classList.remove('active');
     });
-    images[index].classList.add('active');
+    images[index].classList.add('active');//index indica el elemento activo en la posición de la lista
 }, 10000);
 
-//mensaje de consulta enviada
+//SECCION CONTACTO: mensaje de consulta enviada
 var contacto_form = document.getElementById("contacto-form");
 var formulario_enviado = document.getElementById("formulario-enviado");
 var formulario_no_enviado = document.getElementById("fomulario-no-enviado");
@@ -93,6 +93,7 @@ var email_input = document.getElementById("email-input");
 var enviar_consulta = document.getElementById("boton-enviar");
 
 function mostrar_elemento(ocultar_actual, mostrar_siguiente) {
+    //ésta función oculta el container actual y muestra el siguiente
     ocultar_actual.style.display = "none";
     mostrar_siguiente.style.display = "flex";
 }
@@ -107,7 +108,7 @@ enviar_consulta.addEventListener("click", function (e) {
 
 })
 
-//conexión API clima
+//SECCION CONTACTO: conexión API clima
 const form_api = document.getElementById('form-api');
 const result = document.getElementById('result');
 
@@ -122,6 +123,8 @@ form_api.addEventListener('submit', function (e){
         const tiempo_descripcion = data.weather[0].description;
         const temperatura = data.main.temp;
         result.innerHTML = `El clima en ${ciudad}: <b>${temperatura}°C.</b> - ${tiempo_descripcion} `;
+        //aquí usé innerHTML y no innerText; solo porque respeta las etiquetas que utilizo en JavasCript (<b>)
+        document.getElementById('input-api').value = "";
     })
     .catch(error => {
         console.error(error);
