@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600;900&family=Montserrat:wght@400;800&display=swap');
 
 html {
@@ -8,7 +9,7 @@ html {
 * {
     font-family: 'Capriola', sans-serif;
     font-size: 14px;
-    color: #2B1F40;
+    color: #3d2e5d;
 }   
 
 body {
@@ -20,7 +21,7 @@ body {
 h1 {    
     font-family: 'Capriola', sans-serif;
     font-size: 30px;
-    color: #2B1F40;
+    color: #3d2e5d;
     display: block;
     text-align: center;
 }
@@ -28,7 +29,7 @@ h1 {
 h2 {
     font-family: 'Capriola', sans-serif;
     font-size: 20px;
-    color: #2B1F40;
+    color: #3d2e5d;
     text-align: center;
 }
 
@@ -38,7 +39,7 @@ header nav #miUL li {
 
 header nav #miUL li a {
     text-decoration: none;
-    color: #2B1F40;
+    color: #3d2e5d;
 }
 
 header nav #miUL li a:hover {
@@ -51,8 +52,8 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    color: #2B1F40;
-    border-bottom: 1px solid #2B1F40;
+    color: #3d2e5d;
+    border-bottom: 1px solid #3d2e5d;
 }
 
 ul#miUL {
@@ -66,7 +67,7 @@ ul#miUL {
 #carrouselImagenes .hcg-slide-container {
 	width: auto;
 	height: auto;
-    border-bottom: 1px solid #2B1F40;
+    border-bottom: 1px solid #3d2e5d;
 
 }
 
@@ -101,7 +102,7 @@ ul#miUL {
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
-	color: #2B1F40;
+	color: #3d2e5d;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -147,7 +148,7 @@ ul#miUL {
     grid-template-columns: auto auto auto auto auto;
     padding: 30px 130px;
     background-color: white;
-    border-bottom: 1px solid #2B1F40;
+    border-bottom: 1px solid #3d2e5d;
 }
 
 .fondo_servicios{
@@ -164,9 +165,7 @@ ul#miUL {
     text-align: center;
     font-size: 3em;
 }
-.box:hover {
-    box-shadow: 0px 5px 15px #2b1f40cc;
-}
+ 
 .box1 {
     grid-column: 1/ span 2;
 }
@@ -288,7 +287,7 @@ section#cotizacion{
     display: block;
     align-self: center;
     justify-content: center;
-    border-bottom: 1px solid #2B1F40;
+    border-bottom: 1px solid #3d2e5d;
 
 }
 
@@ -340,10 +339,10 @@ div#botonesCotizacion{
     width: 90%;
     height: 2.375rem;
     padding: 0.375rem 0.75rem;
-    color: #2B1F40 ;
+    color: #3d2e5d ;
     background-color: white;
     background-clip: padding-box;
-    border: 1px solid #2B1F40 ;
+    border: 1px solid #3d2e5d ;
     border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -366,10 +365,10 @@ div#botonesCotizacion{
     padding: 0.75rem;
     margin-top: 2rem;
     background:  #5EC2DA;
-    color: #2B1F40;
+    color: #3d2e5d;
     border-radius: 10px;
     cursor: pointer;
-    border: 1px solid #2B1F40
+    border: 1px solid #3d2e5d
 }
   
 div#submit-button{
@@ -378,7 +377,7 @@ div#submit-button{
 
 .skip {
     padding: 0.75rem;
-    color: #2B1F40;
+    color: #3d2e5d;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -388,7 +387,7 @@ div#submit-button{
 
 .testimonios {
     padding: 40px;
-    border-bottom: 1px solid #2B1F40;
+    border-bottom: 1px solid #3d2e5d;
 }
 
 .testimonios-titulo{
@@ -406,7 +405,7 @@ div#submit-button{
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid #2B1F40;
+    border: 1px solid #3d2e5d;
 }
 
 .carousel img {
@@ -439,12 +438,12 @@ div#submit-button{
 /* Quienes somos? */
 
 .quienes-somos {
-    height: 500px;
+    height: 650px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     padding: 30px 130px;
     background-color: white;
-    border-bottom: 1px solid #2B1F40;
+    border-bottom: 1px solid #3d2e5d;
 }
 
 .quienes-somos-titulo {
@@ -499,15 +498,15 @@ div#submit-button{
     margin: 0;
     padding: 0;
     background: #EFECEB;
-    padding: 20px 0;
-    border-bottom: 1px solid #2B1F40
+    padding-bottom: 60px;
+    border-bottom: 1px solid #3d2e5d
 }
 
 .contacto-left {
     border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border: 1px solid #2B1F40;
+    border: 1px solid #3d2e5d;
     width: 30%;
     height: 450px;
     display: flex;
@@ -553,8 +552,8 @@ div#submit-button{
     box-sizing: border-box;
     background-color: white;
     border: none;
-    border: 1px solid #2B1F40;
-    color: #2B1F40;
+    border: 1px solid #3d2e5d;
+    color: #3d2e5d;
 }
 
 .contacto-form-input:focus{
@@ -565,7 +564,7 @@ div#submit-button{
     width: 100%;
     height: 150px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     border: none;
     border-radius: 10px;
@@ -576,9 +575,9 @@ div#submit-button{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    border: 1px solid #2B1F40;
+    border: 1px solid #3d2e5d;
     background-color: white;
-    color: #2B1F40;
+    color: #3d2e5d;
 }
 
 .contact-form-textarea:focus{
@@ -587,13 +586,13 @@ div#submit-button{
 
 .contacto-form-boton {
     background-color: #FBC92E;
-    color: #2B1F40;
+    color: #3d2e5d;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    border: 1px solid #2B1F40
+    border: 1px solid #3d2e5d
  }
 
 .contacto-right {
@@ -607,7 +606,7 @@ div#submit-button{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 0 40px;
-    border: 1px solid #2B1F40;
+    border: 1px solid #3d2e5d;
     border-left: none;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -646,18 +645,6 @@ div#submit-button{
     opacity: 0.5;
 }
 
-.facebook{
-    color: blue;
-}
-
-.twitter{
-    color: cornflowerblue;
-}
-
-.instagram{
-    color: rgb(207, 52, 238);
-}
-
 .contacto-ubicacion {
     border-radius: 10px;
     height: 250px;
@@ -673,11 +660,11 @@ div#submit-button{
 
 .contacto-ubicacion-maps{
     border-radius: 10px;
-    border: 1px solid #2B1F40;
+    border: 1px solid #3d2e5d;
 }
 
 .contacto-subtitulo{
-    color: #2B1F40;
+    color: #3d2e5d;
     font-size: 1.4em;
 }
 
@@ -693,19 +680,13 @@ div#submit-button{
     width: 100px;
     height: 100px;
 }
-.btn-api{
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border: 1px solid black;
-}
 
 #result{
     font-size: 12px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #3d2e5d;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -730,7 +711,7 @@ footer {
   }
   
   footer nav a {
-    color: #fff;
+    color: #efeceb;
     text-decoration: none;
   }
   
@@ -738,18 +719,50 @@ footer {
     text-decoration: underline;
   }
   footer p {
-    color: white;
+    color: #efeceb;
+    font-size: 10px;
   }
 
-.fa {
+ 
+
+.btn-api {
+    background-color: #FBC92E;
+    color: #3d2e5d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #3d2e5d
+}
+
+input {
+    background-color: white;
+    color: #3d2e5d;
     font-size: 14px;
-    height:40px;
-    color: gray;
-    background-color: #efeceb;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: normal;
+    border: 1px solid #3d2e5d
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#efeceb;
+	color:white; 
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
 }
