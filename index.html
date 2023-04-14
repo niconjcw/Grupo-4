@@ -10,8 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="http://wa.me/+5491199999999" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
 </head>
 <body>
+  
 <header>            
     <h1>Nombre de la Empresa</h1>
             <nav>
@@ -196,33 +201,33 @@
       <div class="quienes-somos-titulo"><h1>Conocenos!</h1></div>
 			<div class="box box1">
 				<img src="/imagenes/avatar-ej1.png" alt="" class="caract-icono">
-				<h4 class="caract-titulo">Nombre</h4>
-				<p class="caract-descripcion">Descripción</p>
+				<h4 class="caract-titulo">Antonio</h4>
+				<p class="caract-descripcion">Es un apasionado del diseño y la usabilidad web. Con su experiencia en HTML, CSS y JavaScript, crea interfaces de usuario intuitivas y atractivas que hacen que los sitios web cobren vida.</p>
 			</div>
 			<div class="box box2">
 				<img src="imagenes/avatar-ej2.png" alt="" class="caract-icono">
-				<h4 class="caract-titulo">Nombre</h4>
-				<p class="caract-descripcion">Descripción</p>
+				<h4 class="caract-titulo">Candelaria</h4>
+				<p class="caract-descripcion">Es una experta en programación y bases de datos. Con su conocimiento en lenguajes como PHP y bases de datos como MySQL, desarrolla la lógica y funcionalidad detrás de los sitios web, asegurándose de que todo funcione sin problemas.</p>
 			</div>
 			<div class="box box3">
 				<img src="imagenes/avatar-ej1.png" alt="" class="caract-icono">
-				<h4 class="caract-titulo">Nombre</h4>
-				<p class="caract-descripcion">Descripción</p>
+				<h4 class="caract-titulo">Carlos</h4>
+				<p class="caract-descripcion">Es un creativo diseñador que se preocupa por la experiencia del usuario. Diseña interfaces de usuario visualmente atractivas, intuitivas y funcionales, asegurando que los visitantes del sitio web tengan una experiencia agradable.</p>
 			</div>
 			<div class="box box4">
 				<img src="imagenes/avatar-ej2.png" alt="" class="caract-icono">
-				<h4 class="caract-titulo">Nombre</h4>
-				<p class="caract-descripcion">Descripción</p>
+				<h4 class="caract-titulo">Fran</h4>
+				<p class="caract-descripcion">Especialista en optimización para motores de búsqueda (SEO). Con su experiencia en investigación de palabras clave, análisis de competencia y optimización de contenido, ayuda a los sitios web a alcanzar una mayor visibilidad en los resultados de búsqueda.</p>
 			</div>
 			<div class="box box5">
 				<img src="imagenes/avatar-ej1.png" alt="" class="caract-icono">
-				<h4 class="caract-titulo">Nombre</h4>
-				<p class="caract-descripcion">Descripción</p>
+				<h4 class="caract-titulo">Juver</h4>
+				<p class="caract-descripcion">Es un experto en seguridad informática y se asegura de que los sitios web desarrollados sean seguros y protegidos contra posibles amenazas cibernéticas. Implementa medidas de seguridad y realiza pruebas de penetración para garantizar la protección de los datos del sitio y de los usuarios.</p>
 			</div>
 			<div class="box box6">
 				<img src="imagenes/avatar-ej2.png" alt="" class="caract-icono">
-				<h4 class="caract-titulo">Nombre</h4>
-				<p class="caract-descripcion">Descripción</p>
+				<h4 class="caract-titulo">Nicolás</h4>
+				<p class="caract-descripcion">Es un profesional en la gestión de proyectos web. Coordina el equipo de desarrollo, establece plazos y asegura que los proyectos se entreguen a tiempo y dentro del presupuesto. Además, mantiene una comunicación fluida con los clientes para asegurarse de que sus necesidades sean satisfechas.</p>
 			</div>
 			</div>
     </section> 
@@ -235,19 +240,19 @@
         <div class="contacto-left">
         <form id="contacto-form" class="contacto-form" style="display: block;">
             <div class="contacto-form-grupo">
-            <label id="nombre-label" class="contacto-form-label" for="name">Nombre y Apellido</label>
+            <label id="nombre-label" class="contacto-form-label" for="name">Nombre y Apellido*</label>
             <input class="contacto-form-input" type="text" id="contacto-input" name="name" required>
             </div>
             <div class="contacto-form-grupo">
-            <label class="contacto-form-label" for="email">Correo Electrónico</label>
+            <label class="contacto-form-label" for="email">Correo Electrónico*</label>
             <input class="contacto-form-input" type="email" placeholder="algo@ejemplo.com" id="email-input" name="email" required>
             </div>
             <div class="contacto-form-grupo">
-            <label class="contacto-form-label" for="message">Consulta</label>
+            <label class="contacto-form-label" for="message">Consulta*</label>
             <textarea class="contact-form-textarea" id="message" name="message" required></textarea>
             </div>
             <button id="boton-enviar" class="contacto-form-boton boton-enviar" type="submit">Enviar</button>
-            <div id="formulario-no-enviado" class="formulario-no-enviado" style="display: flex; color: rgb(155, 155, 155);">* todos los campos son obligatorios</div>
+            <div id="formulario-no-enviado" class="formulario-no-enviado" style="display: flex; color: #3d2e5d; font-size: 10px; line-height: 18px;">* todos los campos son obligatorios</div>
         </form>
         <div id="formulario-enviado" class="formulario-enviado" style="display: none;">
             <p class="formulario-enviado-mensaje">Listo! En breve nos contactaremos.</p>
@@ -256,18 +261,18 @@
         </div>
 
         <div class="contacto-right">
-        <h3 class="contacto-subtitulo">Seguínos en nuestras redes</h3>
+        <h3 class="contacto-subtitulo">Seguinos en nuestras redes</h3>
         <div class="contacto-redes">
             <a href="https://www.facebook.com" target="_BLANK" class="contacto-redes-link">
-            <img class="contacto-redes-img" src="imagenes/logo-facebook.png" alt="Facebook">
+            <img class="contacto-redes-img" src="imagenes/logo-facebook.png" alt="Facebook" height= "20px">
   
             </a>
             <a href="https://twitter.com/home" target="_BLANK" class="contacto-redes-link">
-            <img class="contacto-redes-img" src="imagenes/logo-twitter.png" alt="Twitter">
+            <img class="contacto-redes-img" src="imagenes/logo-twitter.png" alt="Twitter" height= "20px">
 
             </a>
             <a href="https://www.instagram.com" target="_BLANK" class="contacto-redes-link">
-            <img class="contacto-redes-img" src="imagenes/logo-instagram.png" alt="Instagram">
+            <img class="contacto-redes-img" src="imagenes/logo-instagram.png" alt="Instagram" height= "20px">
     
             </a>
         </div>
