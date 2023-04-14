@@ -600,7 +600,7 @@ div#submit-button{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #EFECEB;
+    background-color: white;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
